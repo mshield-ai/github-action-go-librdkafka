@@ -1,7 +1,7 @@
 FROM golang:1.14-alpine3.12
 
 # hadolint ignore=DL3018
-RUN apk add --no-cache openssl ca-certificates pkgconfig g++ git
+RUN apk add --no-cache openssl ca-certificates pkgconfig g++ git docker
 
 # Install librdkafka v1.4.2
 
