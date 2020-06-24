@@ -1,0 +1,19 @@
+name: 'Go command'
+description: 'Run a GO command'
+author: "Roberto G. Hashioka"
+branding:
+  icon: 'compass'
+  color: 'blue'
+inputs:
+  cmd:
+    description: 'The Go command to run without the prefix (e.g. "test ./..")'
+    required: true
+  workDir:
+    description: 'Path to the Go project directory'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.cmd }}
+    - ${{ inputs.workDir }}
