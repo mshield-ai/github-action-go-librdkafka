@@ -14,7 +14,10 @@ This action runs a go command with librdkafka support. This action action was mo
 
 ## Example usage
 
+
+```
 uses: actions/github-action-go-librdkafka@v1
 with:
   cmd: 'test -tags dynamic ./...'
   workDir: '/go/src/github.com/mshield-ai/aegis'
+```

@@ -10,7 +10,7 @@ inputs:
     required: true
   workDir:
     description: 'Path to the Go project directory'
-    required: true
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
